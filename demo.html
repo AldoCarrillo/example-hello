@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        h1 {
+         background-color: black;
+         color: white;
+         text-align: center;
+         height: 45px;
+    
+        }
+
+        div {
+          background-color: coral;  
+        }
+
+        
+        .row {
+            display: flex;
+        }
+
+       
+        .column {
+            flex: 50%;
+            padding: 10px;
+            height: 300px; 
+        }
+
+
+       
+
+    </style>
     <head>
         <title>Student Bio</title>
     </head>
@@ -9,18 +38,29 @@
 
         <h1>Student Bio</h1>
 
-        <h2> Aldo Carrillo</h2> 
 
-        <img src="demo.png" width="200" height="200">
+      
+            <div class="row">
+           
+                <div class="column" >
+                    <h2> Aldo Carrillo</h2> 
 
+                    <img src="demo.png" width="200" height="200">
 
-        <p>Hi I am Aldo Carrillo, from San Diego</p>
+                    <p>Hi I am Aldo Carrillo, from San Diego</p>
+                
+                </div>
+            
+                <div class="column" >
+                    <h2> Contact Info</h2>
+                        <ul>
+                            <li> <strong>Email:</strong> <a href="mailto:aldo.carrillo22@gmail.com">aldo.carrillo22@gmail.com</a> </li>
+                            <li> <strong>GitHub:</strong><a href="https://github.com/AldoCarrillo"> Aldo_Carrillo</a> </li>
+                            <li> <strong>Portafolio:</strong>  <a href="">Coming soon</a> </li>
+                        </ul>
 
-        <h2> Contact Info</h2>
-            <ul>
-                <li> <strong>Email:</strong> <a href="mailto:aldo.carrillo22@gmail.com">aldo.carrillo22@gmail.com</a> </li>
-                <li> <strong>GitHub:</strong><a href="https://github.com/AldoCarrillo"> Aldo_Carrillo</a> </li>
-                <li> <strong>Portafolio:</strong>  <a href="">Coming soon</a> </li>
-            </ul>
+                </div>
+            </div>
+        
     </body>
 </html>
