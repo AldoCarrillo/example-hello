@@ -1,66 +1,100 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        h1 {
-         background-color: black;
-         color: white;
-         text-align: center;
-         height: 45px;
-    
-        }
+<html lang="en-us">
 
-        div {
-          background-color: coral;  
-        }
+  <style>
+    h1 {
+      background-color: black;
+      color: white;
+      text-align: center;
+     
 
-        
-        .row {
-            display: flex;
-        }
+    }
 
-       
-        .column {
-            flex: 50%;
-            padding: 10px;
-            height: 300px; 
-        }
-
-
-       
-
-    </style>
-    <head>
-        <title>Student Bio</title>
-    </head>
-
-
-    <body>
-
-        <h1>Student Bio</h1>
-
-
+    div {
+      background-color: rgb(240, 169, 143);  
+      height: 400px;
+      padding-left: 50px;
+      padding-top: 10px;
       
-            <div class="row">
-           
-                <div class="column" >
-                    <h2> Aldo Carrillo</h2> 
+    }
 
-                    <img src="demo.png" width="200" height="200">
+    
+    .column1 {
+      float : left;
+      width: 20%;
+      padding: 0%;
+      height: fit-content;  
+    }
 
-                    <p>Hi I am Aldo Carrillo, from San Diego</p>
-                
-                </div>
-            
-                <div class="column" >
-                    <h2> Contact Info</h2>
-                        <ul>
-                            <li> <strong>Email:</strong> <a href="mailto:aldo.carrillo22@gmail.com">aldo.carrillo22@gmail.com</a> </li>
-                            <li> <strong>GitHub:</strong><a href="https://github.com/AldoCarrillo"> Aldo_Carrillo</a> </li>
-                            <li> <strong>Portafolio:</strong>  <a href="">Coming soon</a> </li>
-                        </ul>
+    .column2 {
+      float : left;
+      width: 50%;
+      padding: 0%;
+      height: fit-content; 
+      margin-top: 55px; 
+    }
 
-                </div>
-            </div>
-        
-    </body>
+    .column3 {
+      float : left;
+      width: 30%;
+      padding: 0%;
+      height: fit-content;  
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      
+    }
+   
+    
+  </style>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+</head>
+
+<body>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <div class = "row">
+
+    
+    <div class = "column1"> 
+
+        <h2>Your Name</h2>
+
+        <img src="https://placehold.it/200x200" alt="Your Name">
+    </div>
+  
+  
+  
+    <div class = "column2"> 
+       
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+    
+    </div>
+    
+
+    
+    <div class = "column3"> 
+        <h2>Contact Info</h2>
+        <ul>
+          <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+          <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+          <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        </ul>
+      </div>
+    
+  
+  </div>
+
+</body>
+
 </html>
